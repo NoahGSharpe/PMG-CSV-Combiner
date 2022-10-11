@@ -4,8 +4,9 @@ import sys
 def main():
     needHeader = True
     for i in range(1, len(sys.argv)):
-        filename = sys.argv[i]
-        with open(filename) as file:
+        path = sys.argv[i]
+        filename = path[path.rfind('/')+1:]
+        with open(path) as file:
             for j, line in enumerate(file):
                 if needHeader:
                     print(line[:-1] + ",\"filename\"\n")

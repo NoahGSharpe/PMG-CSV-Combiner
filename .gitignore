@@ -155,3 +155,5 @@ cython_debug/
 combined.csv
 fixtures
 generatefixtures.py
+testFolder
+testCombined.csv

@@ -2,7 +2,7 @@ import unittest
 import os
 
 
-class TestStringMethods(unittest.TestCase):
+class TestCSVCombiner(unittest.TestCase):
 
     def test_Barn_Birds_Pets(self):
         os.system(
